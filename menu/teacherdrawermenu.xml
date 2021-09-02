@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Course Registration"
+        >
+        <menu>
+            <group android:checkableBehavior="none">
+                <item android:id="@+id/regCourse"
+                android:title="Register Course"
+                    android:icon="@drawable/course"
+
+                />
+                <item android:id="@+id/regUnit"
+                    android:title="Register Unit"
+                    android:icon="@drawable/unit"
+
+                    />
+            </group>
+        </menu>
+    </item>
+<item android:id="@+id/regStudents"
+    android:title="Enrolled Students"
+    android:icon="@drawable/ic_person"
+    />
+
+</menu>
