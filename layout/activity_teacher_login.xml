@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".teacherLogin">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/success"
+        android:text="Sign In"
+        android:textSize="24sp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:layout_marginTop="70dp"/>
+
+    <EditText
+        android:id="@+id/signin_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:drawableTint="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/inputs"
+        android:padding="10dp"
+        android:drawableStart="@drawable/ic_email"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:textCursorDrawable="@color/colorPrimary"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passLayout"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="17dp"
+        android:layout_below="@+id/signin_email"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/signin_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:drawableTint="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_password"
+            android:background="@drawable/inputs"
+            android:layout_marginTop="10dp"
+
+            android:textCursorDrawable="@color/colorPrimary"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/signin_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passLayout"
+        android:text="Login"
+        android:padding="4dp"
+        android:fontFamily="monospace"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/my_buttons"
+        />
+
+
+</RelativeLayout>

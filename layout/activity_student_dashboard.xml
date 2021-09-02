@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".student_dashboard"
+        >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Student Dashboard"
+                        android:textSize="20sp"
+                        android:id="@+id/student"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            app:cardCornerRadius="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="40dp"
+                                    android:id="@+id/mccutcheon"
+                                    android:src="@drawable/note"
+                                    android:layout_centerInParent="true"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/name1"
+                                    android:text="Unit enrollment"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_below="@id/mccutcheon">
+
+                                </TextView>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            app:cardCornerRadius="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="40dp"
+                                    android:id="@+id/check_orders"
+                                    android:src="@drawable/history"
+                                    android:layout_centerInParent="true"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/name2"
+                                    android:text="Learning content"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_below="@id/check_orders">
+
+                                </TextView>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            app:cardCornerRadius="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="40dp"
+                                    android:id="@+id/location"
+                                    android:src="@drawable/people"
+                                    android:layout_centerInParent="true"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/name3"
+                                    android:text="connect with friends"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_below="@id/location">
+
+                                </TextView>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            app:cardCornerRadius="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="40dp"
+                                    android:id="@+id/admin_logout_btn"
+                                    android:src="@drawable/chatty"
+                                    android:layout_centerInParent="true"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/name4"
+                                    android:text="Group Discussion"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_below="@id/admin_logout_btn">
+
+                                </TextView>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            app:cardCornerRadius="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="40dp"
+                                    android:id="@+id/chat"
+                                    android:src="@drawable/setting1"
+                                    android:layout_centerInParent="true"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/name5"
+                                    android:text="profile settings"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_below="@id/chat">
+
+                                </TextView>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            app:cardCornerRadius="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="40dp"
+                                    android:id="@+id/history"
+                                    android:src="@drawable/exit1"
+                                    android:layout_centerInParent="true"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/name6"
+                                    android:text="Log out"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_below="@id/history">
+
+                                </TextView>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+    </RelativeLayout>

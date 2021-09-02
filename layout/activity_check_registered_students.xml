@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckRegisteredStudentsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/r3"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enrolled students"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/text"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+  <!--  <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/inputs"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/r3"
+        android:layout_gravity="center"
+        />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/r1"
+        android:layout_below="@+id/r3"
+        tools:ignore="NotSibling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_weight="45"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADM No."
+            android:layout_weight="10"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:text="Gender"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:layout_weight="10"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="35"
+            android:text="Unit"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_below="@+id/r1"
+    android:layout_width="match_parent"
+    android:layout_marginTop="4dp"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_students_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:clipToPadding="false"
+        />
+</RelativeLayout>
+
+</RelativeLayout>
